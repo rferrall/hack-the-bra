@@ -13,11 +13,12 @@ const Brands = (props) => (
 
      {brands.map((x, index) =>
             <div class="card" key={index}>
-              <img src={x.image} alt="Brand" width="100%" />
+            <a href={x.link}>
+              <img src={x.image} alt="Brand" width="100%" /></a>
               <div class="container">
 
-                  <a href={x.link}><h4><b>{x.brand}</b></h4></a>
-              
+                  <h4><b>{x.brand}</b></h4>
+
               </div>
             </div>)}
 

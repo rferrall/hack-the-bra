@@ -19,6 +19,7 @@ import Home from "../Views/Home/Home";
 import Measure from "../Views/Measure/Measure";
 import ProperFit from "../Views/ProperFit/ProperFit";
 import Brands from "../Views/Brands/Brands";
+import Shape from "../Views/Shape/Shape";
 
 
 import './App.css';
@@ -50,6 +51,11 @@ class App extends Component {
               exact
               path="/profile"
               component={Profile}
+            />
+            <Route
+              exact
+              path="/shape"
+              component={Shape}
             />
             <Route
               exact
