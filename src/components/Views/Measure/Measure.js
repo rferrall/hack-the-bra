@@ -35,6 +35,7 @@ class MeasureOne extends Component {
         let bust = this.state.bust;
         let calculation = bust - band;
         let cup = "";
+
         switch (calculation)
         {
             case 1:
@@ -71,12 +72,11 @@ class MeasureOne extends Component {
                 cup = "K";
                 break;
         }
-
-
         if (band % 2 !== 0)
         {
             band ++;
         }
+
         let position = parseInt(0) + parseInt(58*(band - 27));
         position = position + 'px';
         console.log(position);

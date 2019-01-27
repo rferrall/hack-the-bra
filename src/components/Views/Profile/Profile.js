@@ -9,7 +9,7 @@ import image from "./ProfilePg.png";
 // and then instead of `props.user.username` you could use `user.username`
 const Profile = (props) => (
   <div align="center">
-    <Link to="/shape">
+    <Link to="/measure">
     <img src={image} alt="Profile" width="70%" />
     </Link>
 
