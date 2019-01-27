@@ -1,0 +1,16 @@
+[
+  {
+    "title":"My fav",
+    "size":"36C",
+    "brand":"Target",
+    "description":"this is my favorite bra",
+    "image":"good.jpg"
+  },
+    {
+      "title":"ok red bra",
+      "size":"34D",
+      "brand":"Victoria Secret",
+      "description":"this bra always pokes my rigs",
+      "image":"badbra.jpg"
+    }
+]
