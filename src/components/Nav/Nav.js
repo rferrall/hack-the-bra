@@ -34,9 +34,9 @@ const Nav = (props) => (
             <Link className="nav-link" to="/home">
                 Home
             </Link>
-            <Link className="nav-link" to="/profile">
+            <a href="https://gbdhfz.axshare.com/my_profile.html" className="nav-link">
                 Profile
-            </Link>
+            </a>
         </div>
 
     </div>

@@ -18,6 +18,7 @@ import Drawer from '../Views/Drawer/Drawer';
 import Home from "../Views/Home/Home";
 import Measure from "../Views/Measure/Measure";
 import ProperFit from "../Views/ProperFit/ProperFit";
+import Brands from "../Views/Brands/Brands";
 
 
 import './App.css';
@@ -59,6 +60,11 @@ class App extends Component {
                 exact
                 path="/drawer"
                 component={Drawer}
+            />
+            <Route
+                exact
+                path="/brands"
+                component={Brands}
             />
             <Route
                 exact

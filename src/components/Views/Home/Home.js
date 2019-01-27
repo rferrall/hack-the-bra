@@ -22,7 +22,7 @@ const Home = () => (
         <table>
             <tr>
                 <td>
-                    <Link to="/gettingstarted">
+                    <Link to="/properfit">
                     <img src={lightbulb} alt="Why is this important?" width='50%'/>
                     <div>Bra 101</div>
                     </Link>
