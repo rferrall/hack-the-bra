@@ -15,16 +15,15 @@ card:img {
 .container {
     padding: 2px 16px;
     margin: 30px;
-
 }
 
 .flex-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center; /* align horizontal */
+    align-items: baseline;
 }
 
 .drawer-title {
     text-align: center;
-
 }

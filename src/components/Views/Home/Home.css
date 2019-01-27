@@ -1,0 +1,16 @@
+.home {
+    color: #563450;
+    /*background-color: #C8B8DB;*/
+}
+a:-webkit-any-link {
+  text-decoration: none;
+}
+.txt1 {
+	color: black;
+}
+.txt2 {
+
+}
+h1 {
+	font-family: 'Martel', serif;
+}

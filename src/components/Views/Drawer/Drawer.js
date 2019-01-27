@@ -21,6 +21,7 @@ const Drawer = (props) => (
                 <h4><b>{x.title}</b></h4>
                 <p>{x.size}</p>
                 <p>{x.brand}</p>
+                <p>{x.description}</p>
               </div>
             </div>)}
 
@@ -38,4 +39,3 @@ const mapStateToProps = state => ({
 
 // this allows us to use <App /> in index.js
 export default connect(mapStateToProps)(Drawer);
-

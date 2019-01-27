@@ -8,13 +8,15 @@
 
 .nav {
   overflow: hidden;
-  background-color: #00acb0;
+  background-color: #C8B8DB;
+  padding-left: 6%;
+  padding: 1%;
 }
 
 .nav-link {
   float: left;
   color: #f2f2f2;
-  background-color: #00acb0;
+  background-color: #C8B8DB;
   text-align: center;
   padding: 24px 10px;
   text-decoration: none;
@@ -28,9 +30,29 @@
 }
 
 .nav-link:hover {
-  background-color: #008183;
+  background-color: #998DA8;
 }
 
 .nav-right {
   float: right;
+}
+.nav-right img {
+  float: left;
+
+}
+h1 {
+  text-align: center;
+  font-family: 'Martel', serif;
+}
+.txt1 {
+  color: black;
+}
+.txt2 {
+  font-weight: bold;
+}
+table, td {
+  padding: 2%;
+}
+table img {
+  width: 200px;
 }

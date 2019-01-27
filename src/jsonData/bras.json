@@ -1,16 +1,38 @@
 [
   {
-    "title":"My fav",
+    "title":"My Fav",
     "size":"36C",
     "brand":"Target",
     "description":"this is my favorite bra",
-    "image":"good.jpg"
+    "image":"bra4.jpg"
   },
     {
-      "title":"ok red bra",
+      "title":"Pink No Cup Bra",
       "size":"34D",
       "brand":"Victoria Secret",
-      "description":"this bra always pokes my rigs",
-      "image":"badbra.jpg"
-    }
+      "description":"this bra has no support",
+      "image":"bra1.jpg"
+    },
+  {
+    "title":"Pink Cup Bra",
+    "size":"34D",
+    "brand":"Victoria Secret",
+    "description":"this bra always pokes my ribs",
+    "image":"bra2.jpg"
+  },
+  {
+    "title":"Red Cup Bra",
+    "size":"34D",
+    "brand":"Victoria Secret",
+    "description":"This bra's straps dig into my shoulders",
+    "image":"bra3.jpeg"
+  },
+
+  {
+    "title":"Black Bra",
+    "size":"34D",
+    "brand":"Victoria Secret",
+    "description":"This bra as amazing support!",
+    "image":"bra5.jpg"
+  }
 ]

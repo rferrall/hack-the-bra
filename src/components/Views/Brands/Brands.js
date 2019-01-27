@@ -1,18 +1,29 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import {Link} from 'react-router-dom';
-
-import image from "./ProfilePg.png";
-
+import brands from '../../../jsonData/brands.json';
+import "./Brands.css";
 // this could also be written with destructuring parameters as:
 // const UserPage = ({ user }) => (
 // and then instead of `props.user.username` you could use `user.username`
-const Profile = (props) => (
-  <div>
-    <Link to="/shape">
-    <img src={image} alt="Profile" width="100%" />
-    </Link>
+const Brands = (props) => (
 
+  <div>
+  <h2 class="brands-title"> My Brands</h2>
+     <div class="flex-container">
+
+     {brands.map((x, index) =>
+            <div class="card" key={index}>
+            <a href={x.link}>
+              <img src={x.image} alt="Brand" width="100%" /></a>
+              <div class="container">
+
+                  <h4><b>{x.brand}</b></h4>
+
+              </div>
+            </div>)}
+
+
+  </div>
   </div>
 );
 
@@ -24,4 +35,4 @@ const mapStateToProps = state => ({
 });
 
 // this allows us to use <App /> in index.js
-export default connect(mapStateToProps)(Profile);
+export default connect(mapStateToProps)(Brands);
