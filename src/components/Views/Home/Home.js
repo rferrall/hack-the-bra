@@ -19,33 +19,37 @@ const Home = () => (
 
         <h1> Congratulations! You are about to find your best bra! </h1>
 
-        <table>
-            <tr>
-                <td>
+        <table width="70%" align="center">
+            <tr align="center">
+                <td align="center">
                     <Link to="/properfit">
                     <img src={lightbulb} alt="Why is this important?" width='50%'/>
-                    <div>Bra 101</div>
+                    <div className="txt1">Why talk about proper fit?</div>
+                    <div className = "txt2">LEARN MORE</div>
                     </Link>
                 </td>
-                <td>
-                    <Link to="/started">
+                <td align = "center">
+                    <Link to="/measure">
                     <img src={started} alt="Get Started" width='50%'/>
-                    <div>Measure yourself </div>
+                    <div className="txt1">The first step is to measure yourself.</div>
+                    <div className="txt2">GET STARTED</div>
                     </Link>
                 </td>
             </tr>
-            <tr>
-                <td>
+            <tr align="center">
+                <td align="center">
                     <Link to="/brands">
                     <img src={explore} alt="Explore Brands" width='50%'/>
-                    <div>Explore Brands</div>
+                    <div className="txt1">Brands are making bras for you!</div>
+                    <div className="txt2">EXPLORE BRANDS</div>
                     </Link>
                 </td>
                 <td>
                     <Link to="/drawer">
 
                     <img src={drawer} alt="My Drawer?" width='50%'/>
-                    <div>My Drawer</div>
+                    <div className="txt1">Create a collection of bras.</div>
+                    <div className="txt2">MY DRAWER</div>
                     </Link>
                 </td>
             </tr>

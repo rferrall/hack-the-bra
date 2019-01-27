@@ -4,12 +4,13 @@ import {connect} from 'react-redux';
 import LogOutButton from '../LogOutButton/LogOutButton';
 import './Nav.css';
 import icon from '../../images/logo1.png'
+import icon2 from '../../images/u12.png'
 
 const Nav = (props) => (
     <div className="nav">
         <Link to="/home">
-            <img src={icon} width="10%"/>
-            <h2 className="nav-title">Hack the Bra</h2>
+            <img src={icon} width="12%"/>
+            <h2 className="nav-title"></h2>
         </Link>
         <div className="nav-right">
             {/* <Link className="nav-link" to="/login">
@@ -28,6 +29,7 @@ const Nav = (props) => (
         </>
       )} */}
             {/* Always show this link since the about page is not protected */}
+            <img src={icon2} align="right" width="12%"/>
             <Link className="nav-link" to="/properfit">
                 Proper Fit
             </Link>

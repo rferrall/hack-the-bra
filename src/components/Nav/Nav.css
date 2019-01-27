@@ -9,7 +9,8 @@
 .nav {
   overflow: hidden;
   background-color: #C8B8DB;
-
+  padding-left: 6%;
+  padding: 1%;
 }
 
 .nav-link {
@@ -34,4 +35,24 @@
 
 .nav-right {
   float: right;
+}
+.nav-right img {
+  float: left;
+
+}
+h1 {
+  text-align: center;
+  font-family: 'Martel', serif;
+}
+.txt1 {
+  color: black;
+}
+.txt2 {
+  font-weight: bold;
+}
+table, td {
+  padding: 2%;
+}
+table img {
+  width: 200px;
 }
