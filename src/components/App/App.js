@@ -11,10 +11,10 @@ import {connect} from 'react-redux';
 import Nav from '../Nav/Nav';
 import Footer from '../Footer/Footer';
 import ProtectedRoute from '../ProtectedRoute/ProtectedRoute'
+import LoginPage from '../LoginPage/LoginPage'
 
 import Profile from '../Views/Profile/Profile';
 import Drawer from '../Views/Drawer/Drawer';
-import Login from "../Views/Login/Login";
 import Home from "../Views/Home/Home";
 import Measure from "../Views/Measure/Measure";
 
@@ -41,10 +41,10 @@ class App extends Component {
               path="/home"
               component={Home}
             />
-            <Route
+            <ProtectedRoute
               exact
               path="/login"
-              component={Login}
+              component={LoginPage}
             />
             {/* For protected routes, the view could show one of several things on the same route.
             Visiting localhost:3000/home will show the UserPage if the user is logged in.
