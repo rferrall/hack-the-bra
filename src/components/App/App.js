@@ -17,6 +17,7 @@ import Profile from '../Views/Profile/Profile';
 import Drawer from '../Views/Drawer/Drawer';
 import Home from "../Views/Home/Home";
 import Measure from "../Views/Measure/Measure";
+import ProperFit from "../Views/ProperFit/ProperFit";
 
 
 import './App.css';
@@ -55,9 +56,14 @@ class App extends Component {
               component={Measure}
             />
             <Route
-              exact
-              path="/drawer"
-              component={Drawer}
+                exact
+                path="/drawer"
+                component={Drawer}
+            />
+            <Route
+                exact
+                path="/properfit"
+                component={ProperFit}
             />
             {/* If none of the other routes matched, we will show a 404. */}
             <Route render={() => <h1>404</h1>} />
