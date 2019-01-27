@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import YouTube from 'react-youtube';
 
 import './Measure.css'
 
@@ -91,17 +92,9 @@ class MeasureOne extends Component {
         if (bust < band)
         {
             this.setState({error: true});
-            // document.getElementById("bustsize").style.setProperty("visibility", "hidden");
-            // document.getElementById("arrowdown").style.setProperty("visibility", "hidden");
-            // document.getElementById("arrowup").style.setProperty("visibility", "hidden");
-            // document.getElementById("output").style.setProperty("color", "red");
-            // document.getElementById("output").innerHTML = ("Error. Bust size should be larger than band size.");
         }
         else {
             this.setState({band: band, cup: cup, position: {left: position}, uparrowpos: {left: uparrowpos}, downarrowpos: {left: downarrowpos}});
-        // document.getElementById("bustsize").style.setProperty("left", position + "px", "important");
-        // document.getElementById("arrowup").style.setProperty("left", uparrowpos + "px", "important");
-        // document.getElementById("arrowdown").style.setProperty("left", downarrowpos + "px", "important");
       }
       
       }
@@ -110,7 +103,19 @@ class MeasureOne extends Component {
     render() {
 
     return (
-        <div>
+        <div align="center">
+            <div align="center">
+            <h2>Let's get you measured!</h2>
+            <YouTube
+                videoId="w6AuNi0MtgM"
+                opts={{
+                    height: '390',
+                    width: '640',
+                  }}
+                onReady={this._onReady}
+            />
+            </div>
+
            <h1>The BRAlculator</h1>
 
             <form className="findbrasize" onSubmit={this.handleSubmit}>
