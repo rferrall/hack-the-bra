@@ -34,35 +34,27 @@ class App extends Component {
           <Switch>
             {/* Visiting localhost:3000 will redirect to localhost:3000/home */}
             <Redirect exact from="/" to="/home" />
-            {/* Visiting localhost:3000/about will show the about page.
-            This is a route anyone can see, no login necessary */}
             <Route
               exact
               path="/home"
               component={Home}
             />
-            <ProtectedRoute
+            <Route
               exact
               path="/login"
               component={LoginPage}
             />
-            {/* For protected routes, the view could show one of several things on the same route.
-            Visiting localhost:3000/home will show the UserPage if the user is logged in.
-            If the user is not logged in, the ProtectedRoute will show the 'Login' or 'Register' page.
-            Even though it seems like they are different pages, the user is always on localhost:3000/home */}
-            <ProtectedRoute
+            <Route
               exact
               path="/profile"
               component={Profile}
             />
-            <ProtectedRoute
+            <Route
               exact
               path="/measure"
               component={Measure}
             />
-            {/* This works the same as the other protected route, except that if the user is logged in,
-            they will see the info page instead. */}
-            <ProtectedRoute
+            <Route
               exact
               path="/drawer"
               component={Drawer}
