@@ -3,10 +3,12 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import LogOutButton from '../LogOutButton/LogOutButton';
 import './Nav.css';
+import icon from '../../images/logo1.png'
 
 const Nav = (props) => (
   <div className="nav">
     <Link to="/home">
+        <img src={icon} width="10%"/>
       <h2 className="nav-title">Hack the Bra</h2>
     </Link>
     <div className="nav-right">
