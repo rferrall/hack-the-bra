@@ -1,0 +1,42 @@
+h1.measure
+{
+	font-family: verdana;
+	font-size: 60px;
+}
+
+.bustsize
+{
+	transform: scale(0.7);
+	position: relative;
+	top: 50px;
+
+}
+.bandsize
+{
+	transform: scale(0.7);
+	position: relative;
+}
+.output
+{
+	font-family: verdana;
+	font-size: 30px;
+	text-align: center;
+}
+
+.arrowup
+{
+	transform: scale(0.7);
+	position: relative;
+	top:-45px;
+}
+.arrowdown
+{
+	transform: scale(0.7);
+	position: relative;
+	top: 95px;
+}
+.measurements
+{
+	width: 1050px;
+	overflow: hidden;
+}
