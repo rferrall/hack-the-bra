@@ -14,7 +14,7 @@ const Brands = (props) => (
      {brands.map((x, index) =>
             <div class="card" key={index}>
             <a href={x.link}>
-              <img src={x.image} alt="Brand" width="100%" /></a>
+              <img src={x.image} alt="Brand" width="70%" /></a>
               <div class="container">
 
                   <h4><b>{x.brand}</b></h4>

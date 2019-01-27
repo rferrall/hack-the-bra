@@ -8,9 +8,9 @@ import image from "./BreastBodyTypes.png";
 // const UserPage = ({ user }) => (
 // and then instead of `props.user.username` you could use `user.username`
 const Shape = (props) => (
-  <div>
+  <div align="center">
     <Link to="/brands">
-      <img src={image} alt="Shape" width="100%" />
+      <img src={image} alt="Shape" width="60%" />
     </Link>
   </div>
 );
